@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+      <!--responsividade-->
+      <link rel="stylesheet" href="/style/responsive.css">
+
+    
+    <title>Cadastro de Peças</title>
+</head>
+<body>
+
+
+    <div class="titulo">
+        <h2>Lista de Peças</h2>    
+    </div>
+
+    <div class="container">
+        <div class="table-responsive">
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nome da Peça*</label><label class="validation-error hide" id="nomePecaValidationError">Este Campo é Obrigatório!</label>
+                        <input type="text" name="Nome da Peça" id="nomePeca">
+                    </div>
+                    <div>
+                        <label>Código da Peça</label>
+                        <input type="text" name="codPeca" id="codPeca">
+                    </div>
+                    <div>
+                        <label>Quantidade</label>
+                        <input type="text" name="quantidade" id="quantidade">
+                    </div>
+                    <div>
+                        <label>Fabricante</label>
+                        <input type="text" name="fabricante" id="fabricante">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input class="button" type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="pecaList">
+                    <thead>
+                        <tr>
+                            <th>Nome da Peça</th>
+                            <th>Código da Peça</th>
+                            <th>Quantidade</th>
+                            <th>Fabricante</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="listagem">
+
+                    </tbody>
+                </table>
+
+                </div>
+            </div>
+
+    <script src="/js/script.js"></script>
+    <header>
+       
+    </header>
+
+    <main>
+        
+ 
+
+ 
+</body>
+</html>
